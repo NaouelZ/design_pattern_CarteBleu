@@ -62,7 +62,7 @@ let payment =
     addPayment : function (creditCard, amount, name)
     {
         if (!(card.checkCardExist(creditCard))){
-            card.addCard(name, creditCard, amount)
+            card.addCard(name, creditCard)
         }
         if(card.cashAvailable(creditCard)-amount < 0){
             alert('You don\'t have enough money in your account')
